@@ -14,6 +14,7 @@
   "dependencies": {
     "@ai-sdk/anthropic": "^1.1.7",
     "@mastra/core": "0.9.1-alpha.5",
+    "@mastra/libsql": "0.0.1-alpha.1",
     "@mastra/memory": "0.3.1-alpha.5",
     "@mastra/pg": "0.3.1-alpha.5",
     "csv-parser": "^3.2.0",

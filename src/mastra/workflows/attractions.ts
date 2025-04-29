@@ -1,6 +1,7 @@
 import { Step, Workflow } from "@mastra/core/workflows";
 import csvParser from "csv-parser";
 import fs from "fs";
+import { mkdir } from "fs/promises";
 import path from "path";
 
 // Update the interface to match the new CSV column names
@@ -27,6 +28,14 @@ const syncCsvDataStep = new Step({
     const csvFilePath =
       process.env.CSV_FILE_PATH ||
       path.join(process.cwd(), "src/data/city-data.csv");
+    const dir = path.dirname(csvFilePath);
+
+    try {
+      await mkdir(dir, { recursive: true });
+    } catch {
+      //ignore
+    }
+
     console.log("Resolved CSV file path:", csvFilePath);
     const records: { data: CityData; externalId: string }[] = [];
 
