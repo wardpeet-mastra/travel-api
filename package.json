@@ -13,15 +13,15 @@
   "type": "module",
   "dependencies": {
     "@ai-sdk/anthropic": "^1.1.7",
-    "@mastra/core": "^0.2.0-alpha.105",
-    "@mastra/memory": "0.1.0-alpha.87",
-    "@mastra/pg": "0.1.0-alpha.15",
+    "@mastra/core": "0.9.1-alpha.5",
+    "@mastra/memory": "0.3.1-alpha.5",
+    "@mastra/pg": "0.3.1-alpha.5",
     "csv-parser": "^3.2.0",
     "zod": "^3.24.2"
   },
   "devDependencies": {
     "@types/node": "^22.13.2",
-    "mastra": "^0.2.0-alpha.164",
+    "mastra": "0.6.0-alpha.7",
     "tsx": "^4.19.2",
     "typescript": "^5.7.3"
   },
